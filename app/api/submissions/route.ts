@@ -31,6 +31,8 @@ export async function POST(req: Request) {
       age: Number(body.age),
       gender: body.gender,
       driveLink: body.driveLink,
+      eligibilityCriteria: body.eligibilityCriteria,
+      agreed: body.agreed
     });
 
     return NextResponse.json({ success: true, data: newSubmission }, { status: 201 });
